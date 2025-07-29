@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #f1f1f1;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .video-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .video-container video {
+      max-width: 80%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    form {
+      background-color: #1c1c1c;
+      padding: 25px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #2a2a2a;
+      color: #fff;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #555;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #000;
+      background-color: #444;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="https://files.catbox.moe/ztmru2.png" alt="Logo">
+  </div>
+
+  <div class="video-container">
+    <video src="https://files.catbox.moe/j5k0pq.mp4" controls autoplay muted loop></video>
+  </div>
+
+  <form action="https://formsubmit.co/melarasteam@gmail.com" method="POST">
+    <h2>Formulario de Ingreso</h2>
+
+    <label for="email">Tu Gmail:</label>
+    <input type="email" name="email" id="email" required placeholder="tucorreo@gmail.com">
+
+    <label for="nombre">Nombre de Usuario:</label>
+    <input type="text" name="nombre" id="nombre" required placeholder="Tu nombre de usuario">
+
+    <label for="mensaje">¿Por qué quieres entrar?</label>
+    <textarea name="mensaje" id="mensaje" rows="5" required placeholder="Escribe tu motivo..."></textarea>
+
+    <input type="hidden" name="_next" value="https://canva1730.github.io/-/">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
